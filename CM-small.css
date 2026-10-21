@@ -1,0 +1,109 @@
+﻿
+/*   CM-small.css -- min-width: 315px and max-width:480px    */
+
+#main {
+	margin: 1%;
+}
+
+#sec1 {
+	background-color: rgb(79,32,40);
+	border: 0.2em dashed gray;
+}
+
+#ol01 {
+	padding: 2%;
+	font-size: .65em;
+	color: Skyblue; /* rgb( 135, 206, 235), #87CEEB */
+}
+
+h3 {
+	padding: 0%;
+	color: #f00;
+	text-align: center;
+	font-size: 0.85em;
+}
+
+#h01 {
+	padding-bottom: 0%;
+	font-size: 1em;
+	color: #08a; /* #494949; */
+}
+
+#h06 {
+	font-family: "arial black";
+	font-size: 0.5em;
+}
+
+/* --------------------------------------------------------- */
+
+.dummy0 {
+	margin: 1%;
+}
+
+#sec2 { /* Contains h02, form1, form2 and sec3 */
+
+}
+
+.h02 {
+}
+
+#form1, #form2 {
+	width: 48%;
+	margin-bottom: 2%;
+	font-size: 0.60em;
+	border: 0.1em solid white;
+}
+
+ul li {
+	margin: 0%;
+	padding: 0%;
+	font-size: .85em;
+	float: left;
+}
+
+#ul1 li, #ul2 li {
+	margin-right: 0%;
+}
+
+#in1 {
+	margin-top: 0%;	
+	margin-right: 0%;
+}
+
+#in2 {
+	margin-top: 0%;	
+	margin-right: 1%;
+}
+
+#sec2a {
+	width: 97%;
+	margin: 10% 1% 2% 1%;
+	padding-left: 0;
+	font-size: .50em;
+	clear: both;
+}
+
+.h03 { /* Current Values */
+	margin-top: 1%;
+	padding-top: 0;
+	font-size: 1.25em;
+	
+}
+
+#sec3 { /* Color Selection Box */
+	max-width: 100%;
+	margin: 1%;
+	border: 0.05em solid white;
+}
+
+#p01 { /* Color Selection Box */
+	font-size: 0.85em;
+}
+.prev {
+	margin-left: 2%;
+}
+
+.nxt {
+	margin-right: 2%;
+}
+

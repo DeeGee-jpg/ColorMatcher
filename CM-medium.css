@@ -1,0 +1,21 @@
+﻿/*    
+	 CM-medium.css 
+	(min-width:481px and max-width:768px)
+*/
+
+#sec1 {
+	margin: 1%;
+	padding: 2%;
+	background-color: #3f3f3f /* #801515; rgb(128, 21, 21) */
+	border: 0.25em dashed #f00;
+}
+
+#sec3 {
+	margin: 1%;
+	margin-left: 5%;
+	border: 0.05em solid white;
+}
+
+.rgb, .grb, .brg {
+	font-size: 0.70em;
+}

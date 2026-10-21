@@ -1,0 +1,221 @@
+﻿/*    
+	Default Style Sheet: CM-medium.css 
+	(min-width:481px and max-width:768px)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+
+	background-color: #000;
+}
+
+/* To make IE treat the following tags in the right manner: */
+article, aside, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+	display: block;
+}
+
+#main {
+	max-width: 769px;
+	margin: 1%;
+	margin-left: 5%;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+}
+
+#sec1 {
+	padding: 2%;
+	background-color: #3f3f3f; /* rgb(63, 63, 63) */
+	border: 0.25em dashed gray;
+}
+
+#h01 { /* h3: Color Matcher */
+	padding-bottom: 0%;
+	color: #AA3939; /* rgb(170,57,57) */
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#h06 { h6: Version 0 */
+	padding-bottom: 3%;
+	color: #000000; /* rgb(170,57,57) */
+	text-align: center;
+	font-size: 0.75em;
+}
+
+#ol01 {
+	margin-left: 5%;
+	text-align: justify;
+	color: #D4646A; /* rgb(212,100,106) */
+}
+
+/* ------------------------------------------ */
+
+.dummy0 {
+	max-width: 769px;
+	margin: 1% 1% 0% 5%;
+}
+
+.h02 { /* h3: Select Buttons */
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #F00;
+	text-align: center;
+}
+
+#sec2 { /* h02, form1, form2 and sec3 */
+
+}
+
+#form1 {
+	width: 15%;
+	color: #fff;
+	font-size: 0.70em;
+	border: .05em solid gray;
+	float: left;
+}
+
+#form2 {
+	width: 15%;
+	color: #fff;
+	font-size: 0.70em;
+	border: .05em solid gray;
+	float: right;
+}
+
+ul li { /* The Radio Buttons in form1, form2 */
+	list-style-type: none;
+	margin-left: 2%;
+	padding-top: 2%;
+}
+#in1 {
+	margin-top: 3%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	color: #00F;
+}
+
+#in2 {
+	margin-top: 3%;
+	margin-bottom: 5%;
+	margin-left: 7%;
+	color: #00F;
+}
+
+#sec2a { /* Current Values, score, score3, score2
+	margin: top right bottom left  */
+	margin: 0 16% 4% 16% ;
+	padding-left: 3px;
+	padding-bottom: 1%;
+	color: #fff;
+	font-size: .65em;
+	border: 0.05em solid orange;
+}
+
+.h03 { /* h3: Current Values */
+	padding-top: 1%;
+	color: #F00;
+	text-align: center;
+}
+
+/* ---------------------------------------------------- */
+
+.score { /* Background */
+	width: 27%;
+	margin-left: 3%;
+	padding-left: 1%;
+	float: left;
+}
+
+.score2 { /* Heading */
+	width: 27%;
+	padding-left: 1%;
+	margin-left: 36%;
+}
+
+.score3 { /* Text */
+	width: 27%;
+	margin-right: 3%;
+	padding-left: 1%;
+	float: right;
+
+}
+
+.deci, .hex {
+	margin-left: 1%;
+	padding-left: 5%;
+}
+
+.deci {
+	padding-top: 3px;
+}
+
+.rgb {
+	color: #f00;
+}
+.grb {
+	color: #0f0;
+}
+.brg {
+	color: #00f;
+}
+
+.hex .rgb, .hex .grb, .hex .brg {
+	margin-right: 2px;
+}
+/* ------------------------------------------ */
+
+#sec3 {
+	max-width: 769px;
+	margin: 1%;
+	margin-left: 5%;
+	margin-top: 2%;
+	border: 0.05em solid white;
+}
+
+#p01 { /* Color Selection Box */
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+.prev {
+	width: 15px;
+	height: 15px;
+/*	margin top right bottom left */
+	margin: 0 0 0% 3%;
+	color: white;
+	float: left;
+}
+
+.nxt {
+	width: 15px;
+	height: 15px;
+	margin: 0 3% 0% 0;
+	float: right;
+}
+
+#MyTabl {
+	width: 85%;
+	height: 20px;
+	margin: 0 7% 0 7%;
+	text-align: center;
+	color: #fff;
+}
+
+td {
+	width: 1.5385%;
+}
+
+.lftval, .rgtval {
+	width: 3px;
+	font-size: 10px;
+}
+	

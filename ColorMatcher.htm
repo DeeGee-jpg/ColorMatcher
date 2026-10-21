@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html language="en">
+
+<head>
+	<META charset="UTF-8" />
+	<link rel="stylesheet" href="CM-default.css">
+	<link rel="stylesheet" href="CM-medium.css" media="(min-width:481px) and (max-width:768px)">
+	<link rel="stylesheet" href="CM-small.css" media="(min-width:315px) and (max-width:480px)">
+	<link rel="stylesheet" href="CM-tiny.css" media="(min-width:250px) and (max-width:314px)">
+
+	<!--
+	To get IE8 to understand HTML5:
+	NOTE: Only IE 6,7 and 8 respond to this code. The rest ignore it.
+	-->
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.google-code.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+ 
+	<!-- Color Matcher - Design 4, Working Copy -->
+	<title>The Color Matcher Tool is an easy to use program that allows you to experiment and come up with your own matching colors for the Background, Text and Headings for your Webpage(s) or Blog(s). As you change colors it shows you the Hexadecimal and Decimal values of the colors you are working with in the "Color Selection Box". When done, you only have to plug in these values into your Html or CSS files to get the desired  Web Page.
+This tool allows you to freely mix colors from 0 to 255 and does not restrict you to just Primary colors. The tool works well for Web Designers. Teachers please note that it also works well for Student projects.
+This tool is designed primarily for a larger screen (desktop, laptop) but works just as well on smaller screen with minor restrictions.</title>
+
+	<meta http-equiv="keywords"
+      	contents="color, colour, colors, colours, HTML Colors, color matcher, color mixer, color maker, color picker, color selector, matching colors, simple colors, colors made simple, simply colors, coloring, ColorMatcher, ColorMaker, colorselector" />
+
+
+</head>
+
+
+<body onload="DoInit();">
+<article id="main">
+	<section id="sec1">
+		<h3 id="h01">Color Matcher</h3>
+		<h6 id="h06">V  e  r  s  i  o  n  0</h6>
+		<ol id="ol01">
+			<!-- <li><span class="Mytxt">Use the Background, Heading and Text in this box to change and come up with the desired colors.</span></li> -->
+			<li><span class="Mytxt">Select Background, Heading or Text and click the "Change" button.</span></li>
+			<li><span class="Mytxt">Select a Color and click the "Change" button.</span></li>
+			<li><span class="Mytxt">If you need to use a higher / lower value for color; click the right / left
+                            arrow in the Color Selection Box.</span></li>
+			<li><span class="Mytxt">Move the cursor on the Bars in the "Color Selection Bar" to change the Background, Heading or Text color.</span></li>
+			<li><span class="Mytxt">For the Option chosen, watch the values change under "Current Values" box. When done, use these values in your HTML/CSS.</span></li>
+		</ol>
+	</section>
+</article>
+
+<article class="dummy0">	
+
+	<h3 class="h02">Select Buttons</h3>
+
+	<section id="sec2">
+		<form id="form1">
+			<ul id="ul1">
+				<li><INPUT TYPE="radio" id="RedCol" NAME="clrchoice" VALUE="1">
+					<label for="RedCol"><strong>Red</strong></label></li>
+				<li><INPUT TYPE="radio" id="GrnCol" NAME="clrchoice" VALUE="2">
+					<label for="GrnCol"><strong>Green</strong></label></li>
+				<li><INPUT TYPE="radio" id="BlueCol" NAME="clrchoice" VALUE="3">
+					<label for="BlueCol"><strong>Blue</strong></label></li>
+			</ul>
+			<input id="in1" type=button Value='Change' onClick="SetRBVal();">
+		</form>
+		
+		<form id="form2">
+			<ul id="ul2">
+				<li><INPUT TYPE="radio" id="BkGrnd" NAME="cat" VALUE="1">
+					<label for="BkGrnd"><strong>Bkgrnd</strong></label></li>
+				<li><INPUT TYPE="radio" id="Heading" NAME="cat" VALUE="2">
+					<label for="Heading"><strong>Hdng</strong></label></li>
+				<li><INPUT TYPE="radio" id="Text" NAME="cat" VALUE="3">
+					<label for="Text"><strong>Text</strong></label></li>
+			</ul>
+			<input id="in2" type=button Value='Change' onclick="SetCat();">
+		</form>
+		
+		<section id="sec2a">
+			<h3 class="h03">Current Values</h3>
+			<div class="score">
+				<strong>Background:</strong>
+				<div class="deci">
+					rgb(<span class="rgb">000</span>, <span class="grb">000</span>, 
+						<span class="brg">000</span>)
+				</div>
+				<div class="hex">
+					Hex: #<span class="rgb">00 </span><span class="grb">00 
+						</span><span class="brg">00 </span>
+				</div>
+			</div>
+
+			<div class="score3">
+				<strong>Text:</strong>
+				<div class="deci">
+					rgb(<span class="rgb">000</span>, <span class="grb">000</span>, 
+						<span class="brg">000</span>)
+				</div>
+				<div class="hex">
+					Hex: #<span class="rgb">00 </span><span class="grb">00 </span> 
+						<span class="brg">00 </span>
+				</div>
+			</div>
+
+			<div class="score2">
+				<strong>Heading:</strong>
+				<div class="deci">
+					rgb(<span class="rgb">000</span>, <span class="grb">000</span>, 
+						<span class="brg">000</span>)
+				</div>
+				<div class="hex">
+					Hex: #<span class="rgb">00 </span><span class="grb">00 </span> 
+						<span class="brg">00 </span>
+				</div>
+			</div>
+		</section>
+
+	</section>
+</article>
+
+<article id="sec3">
+
+<h3 id="p01">Color Selection Box</h3>
+
+<aside class="prev">
+	<img alt="Previous" src=".\images\Prev1a.gif" onClick="PrevRng();">
+</aside>
+
+<aside class="nxt">
+	<img alt="Next" src=".\images\Next1a.gif" onClick="NxtRng();">
+</aside>
+
+<table align="center" id="MyTabl">
+<tbody><tr>
+<td class="lftval"> 63</td>
+<td onmouseover=x(0);></td> <td onmouseover=x(1);></td> <td onmouseover=x(2);></td> <td onmouseover=x(3);></td> <td onmouseover=x(4);></td> <td onmouseover=x(5);></td> <td onmouseover=x(6);></td> <td onmouseover=x(7);></td> <td onmouseover=x(8);></td> <td onmouseover=x(9)></td>
+<td onmouseover=x(10)></td> <td onmouseover=x(11)></td> <td onmouseover=x(12)></td> <td onmouseover=x(13)></td> <td onmouseover=x(14)></td> <td onmouseover=x(15)></td> <td onmouseover=x(16)></td> <td onmouseover=x(17)></td> <td onmouseover=x(18)></td> <td onmouseover=x(19)></td>
+<td onmouseover=x(20)></td> <td onmouseover=x(21)></td> <td onmouseover=x(22)></td> <td onmouseover=x(23)></td> <td onmouseover=x(24)></td> <td onmouseover=x(25)></td> <td onmouseover=x(26)></td> <td onmouseover=x(27)></td> <td onmouseover=x(28)></td> <td onmouseover=x(29)></td>
+<td onmouseover=x(30)></td> <td onmouseover=x(31)></td> <td onmouseover=x(32)></td> <td onmouseover=x(33)></td> <td onmouseover=x(34)></td> <td onmouseover=x(35)></td> <td onmouseover=x(36)></td> <td onmouseover=x(37)></td> <td onmouseover=x(38)></td> <td onmouseover=x(39)></td>
+<td onmouseover=x(40)></td> <td onmouseover=x(41)></td> <td onmouseover=x(42)></td> <td onmouseover=x(43)></td> <td onmouseover=x(44)></td> <td onmouseover=x(45)></td> <td onmouseover=x(46)></td> <td onmouseover=x(47)></td> <td onmouseover=x(48)></td> <td onmouseover=x(49)></td>
+<td onmouseover=x(50)></td> <td onmouseover=x(51)></td> <td onmouseover=x(52)></td> <td onmouseover=x(53)></td> <td onmouseover=x(54)></td> <td onmouseover=x(55)></td> <td onmouseover=x(56)></td> <td onmouseover=x(57)></td> <td onmouseover=x(58)></td> <td onmouseover=x(59)></td>
+<td onmouseover=x(60)></td> <td onmouseover=x(61)></td> <td onmouseover=x(62)></td> <td onmouseover=x(63)></td>
+<td class="rgtval">127</td>
+</tr></tbody></table>
+</article> <!-- End sec3 -->
+
+<script type="text/javascript" src="ColorMatcher.js"></script>
+
+</body>
+</html>    
